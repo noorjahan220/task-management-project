@@ -1,94 +1,104 @@
-# Task Management Application
+# TaskFlow - Modern Task Management System
 
-This is a full-stack Task Management Application where users can easily add, edit, delete, and reorder tasks in real-time. The tasks are categorized into three sections: To-Do, In Progress, and Done. The app ensures that changes are instantly saved to the database to maintain persistence and offers a seamless experience across both desktop and mobile devices.
+![TaskFlow Demo](https://via.placeholder.com/800x400.png?text=TaskFlow+Demo) 
+*Replace with actual screenshot/demo link*
 
-## Key Features
-
-- **Authentication with Firebase (Google sign-in)**
-- **Real-time task updates with MongoDB and Express.js**
-- **Drag-and-drop functionality to manage task categories and order**
-- **Responsive UI using React and Tailwind CSS**
-- **Task categorization into To-Do, In Progress, and Done**
-
-## Live Links
-
-- **Frontend**: [Link to the Frontend](#)
-- **Backend**: [Link to the Backend](#)
-- **App**: [Live Application Link](#)
+A full-stack task management application with real-time synchronization, drag-and-drop functionality, and secure user authentication.
 
 ## Features
 
-### Authentication:
-- Firebase Authentication for Google sign-in
-- Stores user details in the database after the first login
+### Core Functionality
+- 🔐 Firebase Authentication (Google Sign-in)
+- 📋 Create/Edit/Delete tasks with titles & descriptions
+- 🗂️ Three categories: To-Do, In Progress, Done
+- 🖱️ Drag-and-drop task management
+- 📅 Due dates with color-coded urgency indicators
+- 📜 Activity log tracking task changes
+- 📱 Fully responsive design
 
-### Task Management System:
-- Add, edit, delete, and reorder tasks
-- Tasks categorized into To-Do, In Progress, and Done
-- Supports drag-and-drop between categories
-- Instant updates to the database
+### Advanced Features
+- ⚡ Real-time updates using MongoDB Change Streams
+- 🔄 Optimistic UI updates for smooth interactions
+- 🎨 Minimalist UI with dark/light mode support
+- 📊 Persistent task ordering with database sync
+- 🔔 Visual feedback for overdue tasks
+- 📈 Activity history tracking
 
-### Database & Persistence:
-- MongoDB used to store tasks
-- Real-time updates with MongoDB Change Streams or WebSockets
-- Tasks persist even after refreshing or reopening the app
+## Technologies
 
-### Frontend UI:
-- Built with Vite.js + React
-- Clean, minimalistic design using Tailwind CSS
-- Drag-and-drop functionality with react-beautiful-dnd or similar libraries
-- Fully responsive for desktop and mobile users
+### Frontend
+- React.js (Vite)
+- react-beautiful-dnd (Drag & Drop)
+- Tailwind CSS + DaisyUI
+- Firebase Authentication
+- Axios (HTTP Client)
+- react-icons
 
-### Backend API:
-- Express.js API to handle CRUD operations
+### Backend
+- Node.js + Express.js
+- MongoDB (with Mongoose ODM)
+- MongoDB Change Streams
+- JWT Authentication
+- CORS & Helmet (Security)
 
-## Installation
+### DevOps
+- MongoDB Atlas (Cloud Database)
+- Vercel/Netlify (Frontend Hosting)
+- Render/Railway (Backend Hosting)
+- Postman (API Testing)
 
-### Clone the repository:
+## Getting Started
+
+### Prerequisites
+- Node.js (v18+)
+- MongoDB Atlas account
+- Firebase project
+- Git
+
+### Installation
+
+1. **Clone Repository**
 ```bash
-git clone https://github.com/yourusername/task-management-app.git
-Install the dependencies for the backend:
+git clone https://github.com/yourusername/taskflow.git
+cd taskflow
+Frontend Setup
+
 bash
 Copy
-Edit
-cd backend
+cd client
 npm install
-Install the dependencies for the frontend:
+Backend Setup
+
 bash
 Copy
-Edit
-cd frontend
+cd ../server
 npm install
-Set up your environment variables (e.g., Firebase credentials, MongoDB URI) in .env files for both the frontend and backend.
-Start the backend server:
+Configuration
+Frontend (.env)
+
+env
+Copy
+VITE_FIREBASE_API_KEY=your_firebase_key
+VITE_FIREBASE_AUTH_DOMAIN=your_firebase_domain
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_API_BASE_URL=http://localhost:5000
+Backend (.env)
+
+env
+Copy
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+FIREBASE_PROJECT_ID=your_firebase_id
+PORT=5000
+Running Locally
+Start Backend:
+
 bash
 Copy
-Edit
-cd backend
-npm start
-Start the frontend development server:
+cd server && npm run dev
+Start Frontend:
+
 bash
 Copy
-Edit
-cd frontend
-npm run dev
-Open your browser and visit http://localhost:3000 to view the app.
-
-Technologies Used
-Frontend:
-React
-Tailwind CSS
-Vite.js
-React Beautiful DnD (or similar drag-and-drop library)
-Backend:
-Express.js
-MongoDB
-Firebase Authentication
-Contributing
-Feel free to fork the repository, submit pull requests, or open issues. Please follow the code style and best practices, and ensure all changes are well-documented.
-
-vbnet
-Copy
-Edit
-
-You can simply copy and paste this into your README file! Let me know if you'd like to make any changes.
+cd client && npm run dev
+Visit: http://localhost:5173
