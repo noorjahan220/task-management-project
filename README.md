@@ -39,13 +39,11 @@ A full-stack task management application with real-time synchronization, drag-an
 - MongoDB (with Mongoose ODM)
 - MongoDB Change Streams
 - JWT Authentication
-- CORS & Helmet (Security)
+- CORS (Security)
 
 ### DevOps
 - MongoDB Atlas (Cloud Database)
-- Vercel/Netlify (Frontend Hosting)
-- Render/Railway (Backend Hosting)
-- Postman (API Testing)
+- Vercel (Hosting)
 
 ## Getting Started
 
