@@ -2,7 +2,7 @@
 A full-stack task management application with real-time synchronization, drag-and-drop functionality, and secure user authentication.
 ## 🚀 Live Site
 
-🔗 [Live Website]([https://news-paper-91c56.web.app](https://task-management-db0e3.web.app/login))
+🔗 [Live Website]([[https://news-paper-91c56.web.app](https://task-management-db0e3.web.app/login)](https://task-management-db0e3.web.app/login))
 
 ## Features
 
