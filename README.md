@@ -1,7 +1,7 @@
 # TaskFlow - Modern Task Management System
 
-![TaskFlow Demo](https://via.placeholder.com/800x400.png?text=TaskFlow+Demo) 
-*Replace with actual screenshot/demo link*
+![TaskFlow Demo]([https://via.placeholder.com/800x400.png?text=TaskFlow+Demo](https://task-management-db0e3.web.app/login)) 
+
 
 A full-stack task management application with real-time synchronization, drag-and-drop functionality, and secure user authentication.
 
@@ -55,50 +55,33 @@ A full-stack task management application with real-time synchronization, drag-an
 - Firebase project
 - Git
 
-### Installation
+## Installation & Setup
+### Prerequisites:
+Ensure you have **Node.js** and **MongoDB** installed on your system.
 
-1. **Clone Repository**
-```bash
-git clone https://github.com/yourusername/taskflow.git
-cd taskflow
-Frontend Setup
+### Clone the Repository:
+```sh
+git clone [https://github.com/yourusername/whereisit.git](https://github.com/noorjahan220/task-management-project.git)
+cd task-management-project
+```
 
-bash
-Copy
+### Install Dependencies:
+#### Client:
+```sh
 cd client
 npm install
-Backend Setup
-
-bash
-Copy
-cd ../server
+```
+#### Server:
+```sh
+cd server
 npm install
-Configuration
-Frontend (.env)
+```
 
-env
-Copy
-VITE_FIREBASE_API_KEY=your_firebase_key
-VITE_FIREBASE_AUTH_DOMAIN=your_firebase_domain
-VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_API_BASE_URL=http://localhost:5000
-Backend (.env)
 
-env
-Copy
-MONGODB_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-FIREBASE_PROJECT_ID=your_firebase_id
-PORT=5000
-Running Locally
-Start Backend:
 
-bash
-Copy
-cd server && npm run dev
-Start Frontend:
+## Contribution
+Feel free to fork and contribute to this project. Create a pull request with a detailed explanation of changes.
 
-bash
-Copy
-cd client && npm run dev
-Visit: http://localhost:5173
+
+
+---
